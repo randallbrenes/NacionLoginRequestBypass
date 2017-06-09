@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "Nacion.com bypass login",
+    "short_name": "Nacion.comBlocker",
+    "version": "1.0",
+    "description": "Read Nacion.com news without login.",
+    "author": "Randall Brenes",
+    "homepage_url": "https://github.com/clupasq/ChromeHttpRequestBlocker",
+
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "icons": {
+        "16": "images/newspaper16.png",
+        "48": "images/newspaper48.png",
+        "128": "images/newspaper128.png"
+    },
+    "background": {
+        "persistent": true,
+        "scripts": ["blocker.js"]
+    },
+    "browser_action": {
+        "default_title": "Nacion.com login bypass",
+        "default_icon": "images/newspaper48.png",
+        "default_popup": "popup.html"
+    }
+}
